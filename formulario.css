@@ -1,0 +1,73 @@
+/* Asegurarse de que el cuerpo tenga un tamaño completo y utilice flexbox para centrar */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif; /* O cualquier otra fuente */
+    background-color: #f4f4f4; /* Opcional, para darle un color de fondo */
+}
+
+/* Centrar el título h1 */
+.p {
+    text-align: center;
+    font-size: 2em;
+    color: #333; /* Color del texto */
+}
+
+/* Centrar el formulario */
+form {
+    display: block;
+    text-align: center; /* Centra el contenido dentro del formulario */
+    background-color: #fff; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 300px;
+    margin: 20px; /* Añadir margen alrededor del formulario */
+}
+
+/* Centrar los labels y campos de entrada */
+label, input, select, textarea {
+    display: block;
+    margin: 10px auto;
+    width: 80%; /* Establece un ancho para los campos */
+}
+
+/* Centrar el botón */
+input[type="submit"] {
+    width: 50%; /* Puedes ajustar el tamaño del botón */
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Efecto hover */
+}
+
+input[type="reset"] {
+    width: 50%;
+    padding: 10px;
+    background-color: #f44336; /* Color rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="reset"]:hover {
+    background-color: #e53935;
+}
+
+textarea {
+    width: 80%; /* Similar a los otros campos */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

@@ -1,0 +1,48 @@
+h1{
+    
+    background-color:  #fcf5f5;
+    color: #0a0a0a;
+     font-size: 30px;
+     margin-left: 100px;
+     padding: 50px    ;
+     display: inline-block;
+    
+}
+
+a {
+    background-color:  #ff5555;
+    color: #ffe555;
+    font-size: 30px;
+    margin: 100px;
+    padding: 50px;
+    display: block; /* Asegura que <a> se comporte como bloque */
+}
+
+
+
+#bot{
+    background-color:  #fd1909;
+font-size: 30px;
+margin-left: 100px;
+padding: 50px    ;
+display: inline-block;
+}
+
+.tra{
+    background-color:  #55ff6c;
+font-size: 30px;
+margin-left: 100px;
+padding: 50px    ;
+display: inline-block;
+}
+
+#tru{
+    background-color:  #ffe555;
+font-size: 30px;
+margin-left: 100px;
+padding: 50px    ;
+display: inline-block;
+}
+
+
+

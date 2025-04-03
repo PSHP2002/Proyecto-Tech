@@ -1,0 +1,152 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav ul {
+    display: inline-block;
+    float: right;
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 1.1em;
+}
+
+/* Sección bienvenida */
+#bienvenida {
+    background-color: #eaeaea;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#bienvenida p {
+    font-size: 1.2em;
+}
+
+/* Sección servicios */
+#servicios {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#servicios .servicio {
+    margin: 20px 0;
+}
+
+#servicios h3 {
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+/* Sección portafolio */
+#portafolio {
+    padding: 40px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.imagen {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.imagen p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Sección contacto */
+#contacto {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#but{
+    color: red;
+}
