@@ -1,0 +1,100 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emprendimiento en Colombia</title>
+  <link rel="stylesheet" href="restaurante.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="distrito.html">Inicio</a></li>
+                <li><a href="#info">Informacion</a></li>
+                <li><a href="#datos">Datos Historicos</a></li>
+                <li><a href="#formulario">Encuesta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <section id="inicio">
+    <h2>Bienvenido a la Plataforma de Emprendimiento</h2>
+    <p>Este sitio ofrece una visión comprensiva sobre el emprendimiento y la innovación, incluyendo datos relevantes para emprendedores locales.</p>
+  </section>
+
+  <section id="info">
+    <h2>¿Qué es el emprendimiento y la innovación?</h2>
+    <p>El emprendimiento y la innovación son motores de desarrollo económico. En Colombia, estas actividades han generado empleo, crecimiento y transformación social.</p>
+    <h3>Emprendimiento en Restaurantes</h3>
+    <p>Los restaurantes son un ejemplo de emprendimiento que dinamiza la economía local mediante el turismo, el empleo y la gastronomía.</p>
+    <h3>Emprendimiento en Tiendas de Ropa</h3>
+    <p>El sector textil y de la moda ha crecido gracias a emprendedores que crean marcas locales, generan empleo y fomentan la economía circular.</p>
+    <h3>Apoyo Institucional</h3>
+    <ul>
+      <li><a href="https://innpulsacolombia.com" target="_blank">INNpulsa Colombia</a></li>
+      <li><a href="https://www.sena.edu.co" target="_blank">SENA</a></li>
+      <li><a href="https://www.camaramedellin.com.co" target="_blank">Cámara de Comercio</a></li>
+    </ul>
+  </section>
+
+  <section id="datos">
+    <h2>Visualización de Datos Históricos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Tipo de Negocio</th>
+          <th>Cantidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2010</td><td>Restaurante</td><td>1200</td></tr>
+        <tr><td>2015</td><td>Tienda de Ropa</td><td>900</td></tr>
+        <tr><td>2020</td><td>Emprendimiento Digital</td><td>1500</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="formulario">
+    <h2>Calcula tu Capacidad de Emprendimiento</h2>
+    <form id="emprendimientoForm">
+      <p>¿Te gusta resolver problemas?</p>
+      <input type="radio" name="preg1" value="10"> Sí
+      <input type="radio" name="preg1" value="0"> No
+
+      <p>¿Tienes una idea de negocio?</p>
+      <input type="radio" name="preg2" value="10"> Sí
+      <input type="radio" name="preg2" value="0"> No
+
+      <p>¿Conoces algo de marketing o ventas?</p>
+      <input type="radio" name="preg3" value="10"> Sí
+      <input type="radio" name="preg3" value="0"> No
+
+      <button type="button" onclick="calcularPuntaje()">Calcular</button>
+    </form>
+    <div id="resultado"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Emprendimiento Colombia</p>
+  </footer>
+
+  <script>
+    function calcularPuntaje() {
+      let total = 0;
+      document.querySelectorAll('#emprendimientoForm input[type=radio]:checked').forEach((input) => {
+        total += parseInt(input.value);
+      });
+
+      let resultado = document.getElementById('resultado');
+      if (total >= 25) {
+        resultado.textContent = 'Nivel de Emprendimiento: Alto';
+      } else if (total >= 10) {
+        resultado.textContent = 'Nivel de Emprendimiento: Medio';
+      } else {
+        resultado.textContent = 'Nivel de Emprendimiento: Bajo';
+      }
+    }
+  </script>
+</body>
+</html>

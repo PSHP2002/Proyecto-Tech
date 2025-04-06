@@ -1,0 +1,169 @@
+
+  /* Estilos generales del header */
+  header {
+    background-color: #004080;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: url(turbo3.jpeg);
+  }
+
+  /* Estilo del contenido */
+.hero {
+    background: url('turbo.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    
+}
+
+  /* Estilos del nav */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    position: relative;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+   
+  }
+
+  nav ul li a:hover {
+    background-image: linear-gradient(to right, yellow, green, blue);
+    color: white; /* Para que el texto sea legible sobre el fondo */
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+    border-radius: 5px; /* Opcional para que se vea más estilizado */
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav ul li a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  /* Animación de entrada */
+  header {
+    animation: slideDown 0.6s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* segunda preuba */
+
+  .hero {
+    height: 100vh;
+    background-image: url('turbo.jpeg'); /* Cambia la imagen si deseas */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .hero .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4rem;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+    animation: slideDown 1s ease-out;
+  }
+
+  .hero button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero button:hover {
+    background-color: #e67e00;
+    transform: scale(1.05);
+  }
+
+  /* Animaciones */
+  @keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero button {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }

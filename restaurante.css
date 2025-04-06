@@ -1,0 +1,165 @@
+
+  /* Estilos generales del header */
+  header {
+    background-color: #004080;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-decoration: none;
+  }
+
+  /* Estilos del nav */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    position: relative;
+    
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    background-image: linear-gradient(to right, yellow, green, blue);
+    color: white; /* Para que el texto sea legible sobre el fondo */
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+    border-radius: 5px; /* Opcional para que se vea más estilizado */
+    text-decoration: none;
+    border: 2px solid green;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav ul li a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  /* Animación de entrada */
+  header {
+    animation: slideDown 0.6s ease-out;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+    background: url(turbo.jpeg);
+  }
+
+  header, footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  h2 {
+    color: #004080;
+    margin-top: 0;
+  }
+
+  h3 {
+    color: #0066cc;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+  }
+
+  th {
+    background-color: #004080;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f0f8ff;
+  }
+
+  form {
+    margin-top: 1rem;
+  }
+
+  form p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="radio"] {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+  }
+
+  button {
+    margin-top: 1rem;
+    background-color: #004080;
+    color: white;
+    padding: 0.6rem
+}
