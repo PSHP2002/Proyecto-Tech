@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comercio distrital</title>
+    <link rel="stylesheet" href="/css/navbar.css">
+    
+</head> 
+<body>
+   <div id="contenedor-navbar"></div>
+
+        <script> // Cambia la ruta según la ubicación de tu archivo navbar.html
+         fetch("componentes/navbar.html") // Cambia la ruta según la ubicación de tu archivo navbar.html          
+         .then(res => res.text())
+         .then(data => {
+            document.getElementById("contenedor-navbar").innerHTML = data;
+            const css = document.createElement("link");
+            css.rel = "stylesheet";
+            css.href = "css/navbar.css";
+            document.head.appendChild(css);
+            const script = document.createElement("script");
+            script.src = "scripts/navbar.js";
+            document.body.appendChild(script);
+         });
+         
+        </script>
+</body>
+</html>

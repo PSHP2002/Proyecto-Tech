@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    width: 200px;
+  }
+  .restaurant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+  }
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  .card h3 {
+    margin: 10px 0 5px;
+  }
+  .card p {
+    margin: 0;
+    color: gray;
+  }
+  .stars {
+    color: #f39c12;
+    margin: 5px 0 10px;
+  }
+
+  .boton {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .boton:hover {
+    background-color: #2980b9;
+  }
